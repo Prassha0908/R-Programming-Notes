@@ -20,9 +20,28 @@ computing, data exploration, analysis, and visualization.
   - RStudio is an application like Microsoft Word—except that instead of helping you write in English, RStudio helps you write in R.
   - I use RStudio because it makes using R much easier. Also, the RStudio interface looks the same for Windows, Mac OS, and Linux.
 
+----
 # Environment of R studio :
 
 
+---
 
+# Print() vs Cat()  :
 
-  - 
+- print()
+  - Used to print structured R objects (like numbers, vectors, data frames, etc.).
+  - Automatically adds a newline after printing.
+  - Useful in debugging, as it can display internal structure.
+  - The [1] indicates it's the first element of a vector.
+ 
+- cat()
+  - Stands for "concatenate and print".
+  - Used to display plain, unformatted text, typically for user-facing messages.
+  - Does not add a newline automatically — you must include \n if needed.
+  - Can’t print structured objects like lists or data frames directly.
+
+- When to use what?
+  - Use print() when debugging or viewing the structure of variables.
+  - Use cat() when you want nice output like status messages, summaries, or logs.
+ 
+  
