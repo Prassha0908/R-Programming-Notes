@@ -45,3 +45,12 @@ computing, data exploration, analysis, and visualization.
   - Use cat() when you want nice output like status messages, summaries, or logs.
  
   
+# Data Types in R are:
+
+1. numeric – (3,6.7,121)
+2. Integer – (2L, 42L; where ‘L’ declares this as an integer)
+3. logical – (‘True’)
+4. complex – (7 + 5i; where ‘i’ is imaginary number)
+5. character – (“a”, “B”, “c is third”, “69”)
+6. raw – ( as.raw(55); raw creates a raw vector of the specified length)
+
