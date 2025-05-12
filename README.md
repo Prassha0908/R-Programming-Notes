@@ -54,3 +54,15 @@ computing, data exploration, analysis, and visualization.
 5. character – (“a”, “B”, “c is third”, “69”)
 6. raw – ( as.raw(55); raw creates a raw vector of the specified length)
 
+# class() vs typeof() :
+
+- class()
+   - It gives the abstract or object-oriented classification of an object.
+   - Example: "data.frame", "numeric", "factor", "Date"
+   - It tells you what kind of object you're working with in terms of R's object system.
+
+- typeof()
+   - It tells you the underlying storage mode of the object used internally by R.
+   - Example: "list", "double", "character", "integer"
+   - It reflects how the object is implemented at a lower level.
+
