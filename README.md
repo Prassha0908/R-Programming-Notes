@@ -66,3 +66,33 @@ computing, data exploration, analysis, and visualization.
    - Example: "list", "double", "character", "integer"
    - It reflects how the object is implemented at a lower level.
 
+# numeric vs integer data type:
+
+- Whole numbers and decimal numbers comes under numeric data type.
+  - Example : x <- 10 , here x is numeric.
+    
+- Whole numbers along with "L" at suffex comes under integer data type.
+  - Example : x <- 10L , here x is integer.
+ 
+# Basic objects :
+
+1.   Vector
+2.   Matrix
+3.   Array
+4.   List
+5.   Factors
+6.   Data Frame
+
+# Vector :
+
+- A vector is a group of primitive values of the same type.
+- It can be a group of numbers, true/false values, texts, and values of some other type.
+- Types of vector
+  1. Numeric Vector -> A numeric vector is a vector of numeric values.
+  2. Logical Vector -> A logical vector stores a group of TRUE or FALSE values.
+  3. Character Vector
+  4. Complex Vector
+  5. Raw Vector
+
+
+
