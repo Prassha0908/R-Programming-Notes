@@ -43,6 +43,7 @@ is.integer(x)    # FALSE
 is.character(c)  # TRUE
 is.numeric(x)    # TRUE
 
+##########################################################################
 
 ## Vector 
 
@@ -193,6 +194,124 @@ class(x)  # "numeric"
 x <- x+2
 x       # w x y z 
         # 3 4 5 2 
+
+
+##########################################################################
+
+## MATRIX 
+
+# Syntax -> matrix(data, nrow, ncol, byrow, dimname)
+
+x <- matrix(c(1,2,3,4,5,6),nrow = 2, byrow = TRUE)  # either nrow or ncol 
+x
+
+
+# NAMING ROWS AND COLUMNS
+
+rownames(x) <- c("r1","r2")
+colnames(x) <- c("c1","c2","c3")
+
+x     #     c1 c2 c3
+      # r1  1  2  3
+      # r2  4  5  6
+
+
+x <- matrix(c(1,2,3,4,5,6),nrow = 2, byrow = TRUE, dimnames = list(c("a1","a2"),c("b1","b2","b3")))
+
+x     #      b1 b2 b3    
+      #   a1 1  2  3
+      #   a2 4  5  6
+
+
+
+
+# Extracting -> Getting a value or part of an object without changing the original object.
+# Subsetting -> Selecting specific elements from a larger structure using conditions, positions, names, or patterns.
+# Overwriting -> Replacing an existing value with a new one (i.e., modifying the object).
+
+
+
+
+# EXTRACTING ELEMENTS 
+
+x[1,2]     # 2
+
+x[,2]      # a1  a2
+           #  2  5
+
+x[2,]      #  b1  b2  b3
+           #   4  5   6
+
+
+# can be extracted by row and column names also
+
+x["a1","b3"]     # 3
+
+x["a1", c("b2","b3")]   # b2  b3
+                        #  2   3
+
+
+# OMITTING OR OVERWRITING ELEMENTS 
+
+# To delete or omit elements from a matrix,use negative indexes.
+
+x[,-2]     #      b1  b3
+           #  a1  1   3
+           #  a2  4   6
+
+# Here 2nd column is omitted.
+
+
+
+x[2,2] <- 10
+x                #      b1  b2  b3
+                 #  a1  1   2   3
+                 #  a2  4   10  6
+
+
+x[1,] <- 4:6
+x               #      b1  b2  b3
+                #  a1  4   5   6
+                #  a2  4   10  6
+
+
+x[c(1,2),3] <- 12
+x               #      b1  b2  b3
+                #  a1  4   5   12
+                #  a2  4   10  12
+
+# A matrix is a vector represented and accessible in two dimensions; how-ever, it is still a vector in its nature. This allows us to use a one-dimensional accessor for vectors to subset a matrix.
+
+
+
+# An inequality will return another logical matrix of equal size.
+
+x>5         #     b1    b2   b3
+            # a1 FALSE FALSE TRUE
+            # a2 FALSE  TRUE TRUE
+
+
+# ARITHMETIC OPERATIONS 
+
+x + (2*x)       #    b1  b2  b3
+                # a1 12  15  36
+                # a2 12  30  36
+
+a <- matrix(c(1,2,3,4), ncol = 2, byrow = FALSE)
+a               #       [,1] [,2]
+                # [1,]    1    3
+                # [2,]    2    4
+
+
+a%*%a           #       [,1] [,2]
+                # [1,]    7    15
+                # [2,]    10   22
+
+# Matrix multiplication 
+
+
+
+
 
 
 
