@@ -45,7 +45,7 @@ computing, data exploration, analysis, and visualization.
   - Use cat() when you want nice output like status messages, summaries, or logs.
  
   
-# Data Types in R are:
+# Data Types in R are :
 
 1. numeric – (3,6.7,121)
 2. Integer – (2L, 42L; where ‘L’ declares this as an integer)
@@ -66,7 +66,7 @@ computing, data exploration, analysis, and visualization.
    - Example: "list", "double", "character", "integer"
    - It reflects how the object is implemented at a lower level.
 
-# numeric vs integer data type:
+# numeric vs integer data type :
 
 - Whole numbers and decimal numbers comes under numeric data type.
   - Example : x <- 10 , here x is numeric.
@@ -101,8 +101,18 @@ computing, data exploration, analysis, and visualization.
 - X will have m*n entries, with each entry aij having a unique position given by its specific row (i = 1, 2, ..., m) and column (j = 1, 2, ..., n).
 - Matrix are filled columnwise by default, to store elements rowwise _byrow_ should be _TRUE_ .
   
+# Array :
 
+- Arrays are the data objects which allow us to store data in more than two dimensions.
+- An array is created with the help of the array() function.
+- Can be 2 or more dimensions (e.g., 3D, 4D, etc.).
 
+# List :
+
+- A list is a generic vector that is allowed to include different types of objects, even other lists.
+- A single list could contain a numeric matrix, a logical array, a single character string, and a factor object.
+- List is created using list() function.
+  
 
 
 
