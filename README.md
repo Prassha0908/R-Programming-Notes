@@ -90,9 +90,11 @@ computing, data exploration, analysis, and visualization.
 - Types of vector
   1. Numeric Vector -> A numeric vector is a vector of numeric values.
   2. Logical Vector -> A logical vector stores a group of TRUE or FALSE values.
-  3. Character Vector
-  4. Complex Vector
-  5. Raw Vector
+  3. Character Vector -> A character vector is a group of strings. Strings in R consist of alphabets, numbers, and symbols.
+  4. Complex Vector -> Complex vectors are vectors used to store numbers with an imaginary component.
+  5. Raw Vector -> Raw vectors basically store raw binary data that is represented in the hexadecimal form.
+
+
 
 
 
