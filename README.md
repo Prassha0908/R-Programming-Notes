@@ -93,6 +93,14 @@ computing, data exploration, analysis, and visualization.
   3. Character Vector -> A character vector is a group of strings. Strings in R consist of alphabets, numbers, and symbols.
   4. Complex Vector -> Complex vectors are vectors used to store numbers with an imaginary component.
   5. Raw Vector -> Raw vectors basically store raw binary data that is represented in the hexadecimal form.
+ 
+# Matrix :
+
+- A matrix is a vector represented and accessible in two dimensions.
+- A matrix X have m*n, that is, matrix X will have m rows and n columns.
+- X will have m*n entries, with each entry aij having a unique position given by its specific row (i = 1, 2, ..., m) and column (j = 1, 2, ..., n).
+- Matrix are filled columnwise by default, to store elements rowwise _byrow_ should be _TRUE_ .
+  
 
 
 
