@@ -196,7 +196,7 @@ x       # w x y z
         # 3 4 5 2 
 
 
-##########################################################################
+################################################################################
 
 ## MATRIX 
 
@@ -309,6 +309,125 @@ a%*%a           #       [,1] [,2]
 
 # Matrix multiplication 
 
+
+#######################################################################################
+
+
+## ARRAY
+
+# Syntax -> array(data, dim = (nrow, ncol, nmat), dimnames = names)
+
+
+rownames <- c("r1","r2")
+colnames <- c("c1","c2","c3")
+
+x <- array(data = 1:12, dim = c(2,3,2), dimnames = list(rownames,colnames ))
+x               # , , 1
+                #     c1 c2 c3
+                #  r1  1  3  5
+                #  r2  2  4  6
+
+                # , , 2
+                #     c1 c2 c3
+                #  r1  7  9 11
+                #  r2  8 10 12
+
+
+# 2 vectors with different length 
+vec1 <- c(1,2,3,4)
+vec2 <- c(4,5,6,7,8,9)
+
+# R repeats values from the beginning to fill the array.
+# So y -> 1,2,3,4,4,5,6,7,8,9,1,2
+# R fills column-wise (just like in matrices), layer by layer.
+
+y <- array(data = c(vec1,vec2), dim = c(3,2,2))
+y         # , , 1
+          #       [,1] [,2]
+          # [1,]    1    4
+          # [2,]    2    4
+          # [3,]    3    5
+          
+          # , , 2
+          #        [,1] [,2]
+          # [1,]    6    9
+          # [2,]    7    1
+          # [3,]    8    2
+
+
+
+# SUBSETTING AN ARRAY 
+
+x[2,3,2]   # 12 
+# Element in 2nd row, 3rd column, 2nd layer
+
+
+x[1,,1]    #  c1  c2  c3
+           #   1   3   5
+
+
+x["r1","c2",1]   # 3
+
+
+###############################################################################
+
+
+## LIST 
+
+# list can contain elements of different data type
+
+x <- list(a=c(1:5), b = c("a","b","c","d"))
+x
+
+#  $a
+#   1 2 3 4 5
+
+#  $b
+#   "a" "b" "c" "d"
+
+names(x)   # "a"  "b"
+
+
+x <- list(c(TRUE,FALSE,TRUE,TRUE),c(66,44,99),"list")
+x
+          #   [[1]]
+          #   [1]  TRUE FALSE  TRUE  TRUE
+          
+          #   [[2]]
+          #   [1] 66 44 99
+          
+          #   [[3]]
+          #   [1] "list"
+
+
+# ASSIGNING NAMES 
+
+names(x) <- c("logic","numeric","character")
+x
+
+          #   $logic
+          #   [1]  TRUE FALSE  TRUE  TRUE
+          
+          #   $numeric
+          #   [1] 66 44 99
+          
+          #   $character
+          #   [1] "list"
+
+
+# To remove names assign NULL to names
+
+names(x) <- NULL
+names(x)          # NULL
+x 
+            #   [[1]]
+            #   [1]  TRUE FALSE  TRUE  TRUE
+                
+            #   [[2]]
+            #   [1] 66 44 99
+                  
+            #   [[3]]
+            #   [1] "list"
 
 
 
