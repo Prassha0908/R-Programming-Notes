@@ -431,6 +431,90 @@ x
 
 
 
+# EXTRACTING ELEMENT FROM LIST
 
+x[1]          #   [[1]]
+              #   [1]  TRUE FALSE TRUE TRUE
+
+
+x[[1]]        #   [1]  TRUE FALSE TRUE TRUE
+        
+
+x[[1]][3]     #   [1]  TRUE
+
+
+# If the list have names :
+ 
+x$logic       #   [1]  TRUE FALSE TRUE TRUE
+
+
+x["numeric"]  #   [1]  66 44 99
+
+x$numeric[2]  #   [1]  44
+
+x[['logic']][3]  # [1]  TRUE
+
+
+
+# SUBSETTING A LIST
+
+x[c('logic',"numeric")]
+
+                #  $logic
+                #  [1]  TRUE FALSE  TRUE  TRUE
+                
+                #  $numeric
+                #  [1] 66 44 99
+
+
+
+# SETTING VALUES
+
+x$new <- (5:9)
+x$new          #  [1]  5 6 7 8 9
+
+x[c("y","z")] <- list(c(TRUE, FALSE),"multiple")
+
+x[c("y","z")]   #  $y
+                #  [1]  TRUE FALSE
+
+                #  $z
+                #  [1] "multiple"
+
+
+# we can remove member in a list, by assigning NULL to it.
+
+x$z <- NULL
+x       #   $logic
+        #  [1]  TRUE FALSE  TRUE  TRUE
+        
+        #  $numeric
+        #  [1] 66 44 99
+        
+        #  $character
+        #  [1] "character"
+        
+        #  $new
+        #  [1] 5 6 7 8 9
+        
+        #  $y
+        #  [1]  TRUE FALSE
+
+
+# Other functions 
+
+is.list(x)  #  TRUE
+is.list(Y)  #  False
+
+as.list(Y)
+Y
+
+
+# unlist
+
+unlist(x)
+
+
+###############################################################################
 
 
