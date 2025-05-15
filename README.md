@@ -104,15 +104,19 @@ computing, data exploration, analysis, and visualization.
 # Array :
 
 - Arrays are the data objects which allow us to store data in more than two dimensions.
-- An array is created with the help of the array() function.
+- An array is created with the help of the **array()** function.
 - Can be 2 or more dimensions (e.g., 3D, 4D, etc.).
 
 # List :
 
 - A list is a generic vector that is allowed to include different types of objects, even other lists.
 - A single list could contain a numeric matrix, a logical array, a single character string, and a factor object.
-- List is created using list() function.
+- List is created using **list()** function.
   
+# Factor :
+
+ - Factors are implemented to categorize the data or represent categorical data and store it on multiple levels.
+ - A factor can be created or modified with **factor()** with vector as input.
 
 
 
