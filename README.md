@@ -117,6 +117,23 @@ computing, data exploration, analysis, and visualization.
 
  - Factors are implemented to categorize the data or represent categorical data and store it on multiple levels.
  - A factor can be created or modified with **factor()** with vector as input.
+ - It can store both integers and strings values, and are useful in the column that has a limited number of unique values.
+
+# Data Frame :
+
+- Data Frames in R are generic data objects that are used to store tabular data. It is a 2D array like structure.
+- Data Frame can be interpreted as matrices where each column of a matrix can be different data type.
+- 3 main principle components -> data, row, column.
+- It is special type of list in which each component has eqaul length.
+
+  - Characteristic of Data Frame :
+    - The column name should be non-empty.
+    - Row name should be unique.
+    - The data which is stored in a data frame can be a factor, numeric, or character type.
+    - Each column contains same number of data items.
+
+  - Data Frame is created by **data.frame()** .
+
 
 
 
