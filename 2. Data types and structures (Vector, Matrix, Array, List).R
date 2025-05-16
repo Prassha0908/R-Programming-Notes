@@ -518,3 +518,58 @@ unlist(x)
 ###############################################################################
 
 
+## FACTOR
+
+# Syntax -> factor(data)
+
+x <- factor(c(TRUE,FALSE,FALSE,TRUE,TRUE,TRUE))
+
+x      # [1]  TRUE FALSE FALSE TRUE TRUE
+       # Levels: FALSE TRUE
+
+# Levels stores the possible values in the factor.
+# Levels are displayed in alphabetical order.
+
+levels(x)    #  "FALSE" "TRUE"
+
+# Level order can be changed
+x <- factor(c(TRUE,FALSE,TRUE,TRUE,FALSE,FALSE),levels = c(TRUE,FALSE))
+
+levels(x)    #  "TRUE" "FALSE"
+
+#New values can be added to the existing factor by updating the level.
+
+levels(x) <- c(levels(x),"neutral")
+x[3] <- "neutral"
+x
+            #  TRUE FALSE  neutral  TRUE  FALSE   FALSE  
+            #  Levels: TRUE FALSE neutral
+
+x[c(7,8)] <- "neutral"
+x
+            #  TRUE FALSE  neutral  TRUE  FALSE FALSE neutral  neutral 
+            #  Levels: TRUE FALSE neutral
+
+
+
+# Accessing factor elements
+
+x[2]           #  FALSE
+
+x[c(3,5,1)]    #  neutral  FALSE  TRUE
+
+# Changing item value in factor
+
+x[6] <- "TRUE"
+x             #  TRUE FALSE  neutral  TRUE  FALSE TRUE neutral  neutral
+
+
+x[c(8,3)] <- "TRUE"
+x             #  TRUE FALSE  TRUE  TRUE  FALSE TRUE neutral  TRUE
+
+
+
+###############################################################################
+
+
+
