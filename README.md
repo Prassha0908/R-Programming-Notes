@@ -132,7 +132,7 @@ computing, data exploration, analysis, and visualization.
     - The data which is stored in a data frame can be a factor, numeric, or character type.
     - Each column contains same number of data items.
 
-  - Data Frame is created by **data.frame()** .
+- Data Frame is created by **data.frame()** .
 
 
 
