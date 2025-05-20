@@ -572,4 +572,122 @@ x             #  TRUE FALSE  TRUE  TRUE  FALSE TRUE neutral  TRUE
 ###############################################################################
 
 
+## DATA FRAME
+
+x <- data.frame(
+      id = c(1:5),
+      name = c("june","noel","ryan","dan","marie"),
+      age = c(18,19,20,20,21),
+      startDate = as.Date(c("2025-01-02","2024-02-05","2024-03-02","2023-08-15","2025-02-04"))
+)
+
+x
+
+#     id  name  age  startDate
+#   1  1  june   18  2025-01-02
+#   2  2  noel   19  2024-02-05
+#   3  3  ryan   20  2024-03-02
+#   4  4   dan   20  2023-08-15
+#   5  5 marie   21  2025-02-04
+
+
+# Other than creating data frame from raw data, list can also be converted into data frame.
+
+list <- list(a = c("a","b","c","d","e"),b = c(21,22,19,20,21))
+is.list(list)            # TRUE
+
+x <- as.data.frame(list)   # or can use data.frame(list)
+x
+
+#     a  b
+#   1 a 21
+#   2 b 22
+#   3 c 19
+#   4 d 20
+#   5 e 21
+
+is.data.frame(x)        # TRUE
+
+
+# Data Frame can also be created using Matrix
+
+matrix <- matrix(c(1:10), nrow = 2,byrow = TRUE)
+
+matrix
+
+#       [,1] [,2] [,3] [,4] [,5]
+# [1,]    1    2    3    4    5
+# [2,]    6    7    8    9   10
+
+
+x <- data.frame(matrix)
+
+x
+
+#       X1 X2 X3 X4 X5
+#    1   1  2  3  4  5
+#    2   6  7  8  9 10
+
+
+
+# Naming rows and columns
+# Since data frame is a list but also looks like matrix,the way we access these two type of object both apply to data frame
+
+colnames(x) <- c("col1","col2","col3","col4","col5")
+rownames(x) <- c("row1","row2")
+
+x
+
+#          col1 col2 col3 col4 col5
+#     row1    1    2    3    4    5
+#     row2    6    7    8    9   10
+
+
+
+# Subsetting a data frame
+
+x$col1      # 1 6
+
+x[[2]]      # 2 7
+
+x[1,]       #       col1 col2 col3 col4 col5
+            #  row1    1    2    3    4    5
+
+x[2,5]      # 10
+
+
+#  Adding data columns and new records
+
+#  rbind and cbind can be used to append row or column
+
+new <- data.frame(col1 = 11,col2 = 22, col3 = 33,col4 = 44, col5 = 55)
+rownames(new) <- "row3"
+
+x <- rbind(x,new)
+
+x
+
+#          col1 col2 col3 col4 col5
+#     row1    1    2    3    4    5
+#     row2    6    7    8    9   10
+#     row3   11   22   33   44   55
+
+col6 <- c(21,22,20)
+x <- cbind(x,col6)
+x
+
+#          col1 col2 col3 col4 col5 col6
+#     row1    1    2    3    4    5   21
+#     row2    6    7    8    9   10   22
+#     row3   11   22   33   44   55   20
+
+
+# Alternate way 
+
+x$col7 <- x$col1 * 2
+x$col7              #  2 12 22
+
+colnames(x)         #  "col1" "col2" "col3" "col4" "col5" "col6" "col7"
+
+
 
