@@ -135,5 +135,15 @@ computing, data exploration, analysis, and visualization.
 - Data Frame is created by **data.frame()** .
 
 
+# Conditional Statement :
 
+- if statement
+    - If statement is one of the decision-making statements.
+    - It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.
+  
+- if-else statement
+    - An if-else statement is the if statement followed by an else statement.
+    - In an if-else statement, else statement will be executed when the boolean expression is FALSE.
+
+- switch function
 
