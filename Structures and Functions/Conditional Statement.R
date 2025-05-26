@@ -91,3 +91,55 @@ if(a %% 2 == 0){
 }
 
 # Odd Number
+
+
+a <- 0
+if(a > 0){
+  print("Positive Number")
+  
+} else if (a < 0){
+  print("Negative Number")
+
+} else{
+    print("The number is Zero")
+
+}
+
+# "The number is Zero"
+
+
+g <- 78
+if(g >= 90){
+  print("A")
+} else if(g <= 89 && g >= 70){
+  print("B")
+} else if(g <= 69 && g >=50){
+  print("C")
+} else {
+  print("FAIL")
+}
+
+# B
+
+
+
+## SWITCH FUNCTION
+
+a <- 2
+switch(a,"first","second","third")
+
+
+#  "second"
+
+x <- 23
+y <- 43
+
+operator <-"add"
+switch(operator,
+       add = x + y,
+       sub = x - y,
+       mul = x * y)
+
+# 66
+
+
