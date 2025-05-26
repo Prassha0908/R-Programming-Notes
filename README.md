@@ -146,4 +146,6 @@ computing, data exploration, analysis, and visualization.
     - In an if-else statement, else statement will be executed when the boolean expression is FALSE.
 
 - switch function
+   - A switch statement is a selection control mechanism that allows the value of an expression to change the control flow of program execution via map and search.
+   - Syntax : switch(test expression, case1, case2, case3, .........., caseN)
 
