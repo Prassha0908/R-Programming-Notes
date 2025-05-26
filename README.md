@@ -149,3 +149,13 @@ computing, data exploration, analysis, and visualization.
    - A switch statement is a selection control mechanism that allows the value of an expression to change the control flow of program execution via map and search.
    - Syntax : switch(test expression, case1, case2, case3, .........., caseN)
 
+
+# Loop Statements :
+
+- for loop
+    - The most commonly used loop structure when you want to repeat a task a defined number of times is the for loop.
+    - The for loop evaluates an expression by iterating over a given vector or list.
+      
+- while loop
+- repeat loop
+  
