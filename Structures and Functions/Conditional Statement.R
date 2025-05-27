@@ -122,6 +122,28 @@ if(g >= 90){
 # B
 
 
+a <- -23
+if(a >= 0 ){
+  if(a %% 2 == 0){
+    print("Its positive even number");
+  
+    }else{
+    print("Its positive odd number");
+  }
+
+  }else{
+    if(a %% 2 == 0){
+    print("Its negative even number");
+  
+    } else{
+        print("Its negative odd number");
+      }
+}
+
+# "Its negative odd number"
+
+
+  
 
 ## SWITCH FUNCTION
 
