@@ -115,4 +115,26 @@ for(i in 1 : nrow(df)){
 # $ age  : num 22
 
 
+for(i in 0:5){
+  if(i %% 2 == 0){
+    cat(i," ")
+  }
+}
+
+# 0 2 4
+
+
+# Sometimes, it is useful to intervene in a for loop. In each iteration, we can choose to interrupt the for loop, to skip the current iteration, or do nothing and finish the loop. We can use break to terminate a for loop.
+
+for(i in -2:5){
+  if(i == 3){
+    break
+  }
+  cat(i," ")
+}
+
+# -2 -1 0 1 2
+
+
+
 
