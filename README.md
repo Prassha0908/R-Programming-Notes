@@ -165,7 +165,12 @@ computing, data exploration, analysis, and visualization.
    - Unlike other loops it doesn't use condition to exit the loop, istead it looks for the BREAK statemene.
    - Infinite loop can be created by repeat loop.  
   
+# Functions :
 
+- R has many built-in functions which can be directly called without defining them first.
+- Similar to other languages R also has two type of functions.
+    1. Built-in Functions
+    2. User defined Functions
 
 
 
