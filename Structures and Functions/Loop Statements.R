@@ -123,6 +123,58 @@ for(i in 0:5){
 
 # 0 2 4
 
+# Sum of first N natural numbers
+n <- 10
+sum <- 0
+for(i in 1:n){
+  sum <- sum + i
+}
+cat("Sum of first N natural numbers:",sum)
+
+# Sum of first N natural numbers: 55
+
+
+# multiplication table
+num <- as.integer(readline("Enter a number:"))
+for(i in 1:5) {
+  cat(num,"*",i,"=",num*i,"\n")
+}
+
+      #   5 * 1 = 5 
+      #   5 * 2 = 10 
+      #   5 * 3 = 15 
+      #   5 * 4 = 20 
+      #   5 * 5 = 25 
+
+
+# Count odd & even num in a vector
+ec <- 0
+oc <- 0
+for(i in 0:15){
+  if(i %% 2 == 0){
+    ec = ec + 1
+  } else{
+    oc = oc + 1
+  }
+}
+cat("The sum of even vectors:",ec,"\nThe sum of odd vectores:",oc)
+
+      #   The sum of even vectors: 8 
+      #   The sum of odd vectors: 8
+
+
+# Find largest number in a vector
+nums <- c(1,3,12,14,15,2,16,4)
+max <- nums[1]
+for(num in nums ){
+  if(num > max){
+    max <-  num
+  }
+}
+cat("The largest number is :",max)
+
+    #  The largest number is : 16
+
 
 # Sometimes, it is useful to intervene in a for loop. In each iteration, we can choose to interrupt the for loop, to skip the current iteration, or do nothing and finish the loop. We can use break to terminate a for loop.
 # break -> keyword
@@ -165,5 +217,12 @@ nested
 # "A,A" "A,B" "B,A" "B,B"
 
 
+
+
+
+
+
+
+##  while loop
 
 
