@@ -83,7 +83,7 @@ computing, data exploration, analysis, and visualization.
 5.   Factors
 6.   Data Frame
 
-# Vector :
+# 1. Vector :
 
 - A vector is a group of primitive values of the same type.
 - It can be a group of numbers, true/false values, texts, and values of some other type.
@@ -94,32 +94,32 @@ computing, data exploration, analysis, and visualization.
   4. Complex Vector -> Complex vectors are vectors used to store numbers with an imaginary component.
   5. Raw Vector -> Raw vectors basically store raw binary data that is represented in the hexadecimal form.
  
-# Matrix :
+# 2. Matrix :
 
 - A matrix is a vector represented and accessible in two dimensions.
 - A matrix X have m*n, that is, matrix X will have m rows and n columns.
 - X will have m*n entries, with each entry aij having a unique position given by its specific row (i = 1, 2, ..., m) and column (j = 1, 2, ..., n).
 - Matrix are filled columnwise by default, to store elements rowwise _byrow_ should be _TRUE_ .
   
-# Array :
+# 3. Array :
 
 - Arrays are the data objects which allow us to store data in more than two dimensions.
 - An array is created with the help of the **array()** function.
 - Can be 2 or more dimensions (e.g., 3D, 4D, etc.).
 
-# List :
+# 4. List :
 
 - A list is a generic vector that is allowed to include different types of objects, even other lists.
 - A single list could contain a numeric matrix, a logical array, a single character string, and a factor object.
 - List is created using **list()** function.
   
-# Factor :
+# 5. Factor :
 
  - Factors are implemented to categorize the data or represent categorical data and store it on multiple levels.
  - A factor can be created or modified with **factor()** with vector as input.
  - It can store both integers and strings values, and are useful in the column that has a limited number of unique values.
 
-# Data Frame :
+# 6. Data Frame :
 
 - Data Frames in R are generic data objects that are used to store tabular data. It is a 2D array like structure.
 - Data Frame can be interpreted as matrices where each column of a matrix can be different data type.
@@ -157,5 +157,21 @@ computing, data exploration, analysis, and visualization.
     - The for loop evaluates an expression by iterating over a given vector or list.
       
 - while loop
+   - When we don't how many times the desired operation should run then we can use while loop.
+   - A while loop runs and repeats while a specific condition returns TRUE.
+      
 - repeat loop
+   - A repeat loop is used to iterate over a block of code multiple times unit break statement is found.
+   - Unlike other loops it doesn't use condition to exit the loop, istead it looks for the BREAK statemene.
+   - Infinite loop can be created by repeat loop.  
   
+
+
+
+
+
+
+
+
+
+
