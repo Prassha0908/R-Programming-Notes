@@ -125,6 +125,7 @@ for(i in 0:5){
 
 
 # Sometimes, it is useful to intervene in a for loop. In each iteration, we can choose to interrupt the for loop, to skip the current iteration, or do nothing and finish the loop. We can use break to terminate a for loop.
+# break -> keyword
 
 for(i in -2:5){
   if(i == 3){
@@ -134,6 +135,34 @@ for(i in -2:5){
 }
 
 # -2 -1 0 1 2
+
+
+# In some other cases, skipping an iteration in a for loop is also useful.
+# next -> keyword
+
+
+for(i in -2:5){
+  if(i == 0){
+    next
+    
+  }
+  cat(i," ")
+}
+
+# -2 -1 1 2 3 4 5
+
+
+# Nested for loop
+x <- c("A","B")
+nested <- character()
+for(c1 in x){
+  for(c2 in x){
+    nested <- c(nested,paste(c1, c2, sep = ",", collapse = ""))
+  }
+}
+nested
+
+# "A,A" "A,B" "B,A" "B,B"
 
 
 
