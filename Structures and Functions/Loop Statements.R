@@ -219,10 +219,95 @@ nested
 
 
 
-
-
-
-
 ##  while loop
+
+# Syntax :
+#     while (test_expression){
+#         statement
+#     }
+
+
+x <- 3
+while(x < 6){
+  cat(x," ")
+  x <- x+1 
+}                 #  3 4 5 
+
+x <- 3
+while(x < 10){
+  x <- x + 2
+  cat(x," ")
+}                 #  5  7  9  11
+
+# Like for loop break & next keyword are used in while loop also
+
+x <- 0
+while(TRUE){
+  x <- x+1
+  if(x == 5){
+    break
+  } else if(x == 2){
+    next
+  } else {
+    cat(x," ")
+  }
+}               #  1 3 4 
+
+
+n <- 1
+sum <- 0
+while(n <= 10){
+  sum <- n + sum
+  n <- n+1
+}
+cat("Sum :",sum)        #  Sum : 55
+
+
+x = 1
+while(x <= 5){
+  if(x %% 2 == 0){
+    cat(x,"is even number \n")
+  } else {
+    cat(x,"is odd number \n")
+  }
+  x <- x + 1
+}
+    #   1 is odd number 
+    #   2 is even number 
+    #   3 is odd number 
+    #   4 is even number 
+    #   5 is odd number 
+
+
+
+
+
+
+# repeat loop
+
+# Syntax :
+# repeat{
+#   commands 
+#   if(condition){
+#     break
+#   }
+# }
+
+
+
+x <- 1
+i = 1
+repeat{
+  cat(x," ")
+  i <- i+1
+  x <- x+1
+  if(i > 5){
+    break
+  }
+}         #  1  2  3  4  5
+
+
+
+
 
 
