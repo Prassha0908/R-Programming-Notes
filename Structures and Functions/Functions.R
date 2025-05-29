@@ -50,6 +50,66 @@ for(i in 1:5){
                 # 5 is odd 
 
 
+# Functions automatically return the last evaluated expression, but using return() makes it explicit and helps in early exit.
+
+add <- function(n1,n2){
+  return(n1+n2)
+}
+add(32,34)     # 66
+
+# Both without return() & with return() work the same, but return() is helpful in complex logic or conditional exits.
+
+
+# We can assign default value to function parameters.
+new <- function(name = "user"){
+  cat("Hello",name)
+}
+new()          # Hello user
+
+new("Sam")     # Hello Sam
+
+new("Ajay")
+
+
+
+# Position arguments are matched based on order.
+employee <- function(name,age){
+  cat("Name:",name,"\nAge:",age)
+}
+employee("Bob",23)
+              
+               # Name: Bob
+               # Age: 23
+
+employee(23,"Bob")
+
+               # Name:23
+               # Age: Bob
+
+
+# Named arguments are matched by name and can be in any order.
+employee(age=23,name="Bob")
+          
+               # Name: Bob
+               # Age: 23
+
+
+# local variable exist only inside a function.
+# global variable exist in the environment (i.e., outside the function).
+
+x <- 99
+
+new <- function(){
+  x <- 100
+  cat(x)
+}
+
+cat(x)    # 99
+new()     # 100
+
+# This prevents accidental overwrites
+
+
 
 
   
