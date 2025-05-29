@@ -110,6 +110,20 @@ new()     # 100
 # This prevents accidental overwrites
 
 
+## Logical Function
+
+# The most commonly used logical functions are any() & all(). Apart from this which() is also used.
+
+# any() -> if any value satisfies the condition then returns TRUE.
+# all() -> return TRUE only if all the elements satisfies the condition.
+# which() -> returns the position of TRUE elements.
+
+x <- c(-22,12,43,-3,43,5,-34,65)
+
+any(x>1)       # TRUE
+all(x>1)       # FALSE
+which(x>1)     # 2 3 5 6 8
+
 
 
   
