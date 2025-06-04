@@ -176,5 +176,37 @@ round(123.654, -1)  # 120
 round(3.5)      # 4
 round(2.5)      # 2
 
+round(3.6)      # 4
+round(2.6)      # 3
+round(2.4)      # 2
+
+
+# Rounds to a specified number of significant digits, not decimal places.
+signif(12.34,3)         # 12.3
+signif(0.12413,3)       # 0.124
+signif(1.00423,3)        # 1
+signif(123456.234,3)    # 123000
+
+
+
+## HYPERBOLIC FUNCTIONS & TRIGONOMENTRIC FUNCTION
+# These gives the obvious values for hyperbolic and trigonometric functions.
+
+sinh(2)    # 3.62686
+sin(2)     # 0.9092974
+tanh(2)    # 0.9640276
+tan(2)     # -2.18504
+
+# Similarly for acos, asin, atan, cos, cosh, acosh, atanh, sinpi, cospi  
+
+
+## EXTREME FUNCTION
+max(c(1,2,3),c(4,1,3),c(2,3,4))    # 4
+pmax(c(1,2,3),c(4,1,3),c(2,3,4))   # 4 3 4
+
+min(c(1,2,3),c(4,1,3),c(2,3,4))    # 1
+pmin(c(1,2,3),c(4,1,3),c(2,3,4))   # 1 1 3
+
+
 
   
