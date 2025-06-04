@@ -172,7 +172,15 @@ computing, data exploration, analysis, and visualization.
     1. Built-in Functions
     2. User defined Functions
 
+# Number Round Functions :
 
+1. ceiling(x) :  Rounds a number upward to the nearest integer, always rounds towards positive infinity even for a negative number.
+
+2. floor(x) :  Rounds a number downward to the nearest integer, towards negative infinity.
+
+3. trunc(x) :  Truncates the decimal part (drops everything after the decimal). Unlike ceiling() and floor(), it simply cuts off decimal part without rounding.
+
+4.  round(x, digit) :  Rounds to the nearest value, optionally to a specific number of decimal places.
 
 
 
