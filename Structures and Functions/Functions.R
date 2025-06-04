@@ -110,7 +110,9 @@ new()     # 100
 # This prevents accidental overwrites
 
 
-## Logical Function
+
+
+## LOGICAL FUNCTION
 
 # The most commonly used logical functions are any() & all(). Apart from this which() is also used.
 
@@ -122,8 +124,57 @@ x <- c(-22,12,43,-3,43,5,-34,65)
 
 any(x>1)       # TRUE
 all(x>1)       # FALSE
-which(x>1)     # 2 3 5 6 8
+which(x>1)     # 2 3 5 6 8  
 
+
+
+
+## MATH FUNCTIONS 
+x <- 1/0
+x             # Inf
+
+x <- log(0)
+x             # -Inf
+
+is.infinite(x)    # TRUE
+is.finite(x)      # FALSE
+
+sqrt(3.2312)      # 1.797554
+exp(1)            # 2.718282
+
+# If the input value goes beyond the domain of a particular function,then the function returns NAN.
+
+
+
+## ROUNDING FUNCTION
+
+x <- 34.1632
+
+# Rounds upwards to the nearest number.
+ceiling(x)       # 35
+ceiling(-21.6)   # -21
+
+
+# Rounds downward to the nearest number.
+floor(x)         # 34
+floor(-23.9)     # -24
+floor(43.99)     # 43
+
+
+# Truncates the decimal part (drops everything after the decimal)
+trunc(x)         # 34
+trunc(12.98452)  # 12
+
+# Rounds to the nearest value, optionally to a specific number of decimal places.
+
+round(x)            # 34
+round(x, digit=3)   # 34.163
+round(23.654, 2)    # 23.65
+round(123.654, -1)  # 120
+
+# Rounds to nearest, with “round to even” rule on .5
+round(3.5)      # 4
+round(2.5)      # 2
 
 
   
