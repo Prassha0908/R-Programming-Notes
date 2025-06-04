@@ -180,9 +180,17 @@ computing, data exploration, analysis, and visualization.
 
 3. trunc(x) :  Truncates the decimal part (drops everything after the decimal). Unlike ceiling() and floor(), it simply cuts off decimal part without rounding.
 
-4.  round(x, digit) :  Rounds to the nearest value, optionally to a specific number of decimal places.
+4.  round(x, digit) :  Rounds to the nearest value, optionally to a specific number of decimal places. Rounds to nearest, with “round to even” rule on .5 .
+
+5.  signif(x, digit) :  Rounds to a specified number of significant digits, not decimal places.
 
 
+# Extreme Function :
+- max() : Used to calculate the maximum value in a single vector (or) multiple vector.
+- min() : Used to calculate the minimum value in a single vector (or) multiple vector.
+- pmax() : Used to calculate the maximum value at each position among all vectors.
+- pmin() : Used to calculate the minimum value at each position among all vectors.
+  
 
 
 
