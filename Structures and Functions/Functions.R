@@ -113,7 +113,6 @@ new()     # 100
 
 
 ## LOGICAL FUNCTION
-
 # The most commonly used logical functions are any() & all(). Apart from this which() is also used.
 
 # any() -> if any value satisfies the condition then returns TRUE.
@@ -200,12 +199,49 @@ tan(2)     # -2.18504
 # Similarly for acos, asin, atan, cos, cosh, acosh, atanh, sinpi, cospi  
 
 
+
+
 ## EXTREME FUNCTION
 max(c(1,2,3),c(4,1,3),c(2,3,4))    # 4
 pmax(c(1,2,3),c(4,1,3),c(2,3,4))   # 4 3 4
 
 min(c(1,2,3),c(4,1,3),c(2,3,4))    # 1
 pmin(c(1,2,3),c(4,1,3),c(2,3,4))   # 1 1 3
+
+
+
+
+
+## STATISTICAL FUNCTION
+# In statistics, the study of a population often begins with a random sample of it.
+
+sample(1:6, size = 4)      # 6 1 3 5
+
+sample(1:6, size = 4, replace = TRUE)    # 6 6 5 5
+
+# Although sample() is often used to draw samples from a numeric vector, it also works with other types of vectors.
+sample(letters, size = 5)    # "e" "l" "w" "p" "u"
+
+sample(LETTERS, size = 5, replace = TRUE)    #  "E" "E" "Z" "Y" "D"
+
+sample(list(a = 1,b =c(2,4,6), c = c("a","b")),size = 2)
+
+                     #  $a
+                     #   [1] 1
+                     #  $c
+                     #   [1] "a" "b"
+ 
+
+
+# sample() function supports weighted sampling, that is, we can specify a probability for each element.
+grade <- sample(c("A","B","C"), size = 9, replace = TRUE,prob = c(0.5,0.25,0.75))
+
+grade             # "C" "C" "C" "C" "B" "A" "C" "C" "C"
+
+table(grade)  # Use table() to see the occurrence of each value.
+      #   grade
+      #   A B C 
+      #   1 1 7 
 
 
 
